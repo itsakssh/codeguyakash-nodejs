@@ -5,7 +5,7 @@ const cluster = require("cluster")
 
 const app = express();
 const numCPUs = os.cpus().length;
-const PORT = process.env.PORT || 4200;
+const PORT = process.env.PORT || 8000;
 
 if (cluster.isPrimary) {
     console.log(`Primary Server PID: ${process.pid} is running`);
